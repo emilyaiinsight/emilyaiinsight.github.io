@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Emily AI Insight</title>
+    <meta name="description" content="Explore Emily's AI projects, tools, and innovative solutions">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#06b6d4',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- Floating Header Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <i class='bx bx-brain text-white text-xl'></i>
+                    </div>
+                    <a href="index.html" class="text-xl font-bold text-dark">Emily AI Insight</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">About</a>
+                    <a href="blog.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Blog</a>
+                    <a href="projects.html" class="nav-link text-primary font-semibold">Projects</a>
+                    <a href="contact.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-dark hover:text-primary transition-colors duration-300">
+                    <i class='bx bx-menu text-2xl'></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden mt-4 pb-4 hidden">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">About</a>
+                    <a href="blog.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Blog</a>
+                    <a href="projects.html" class="nav-link text-primary font-semibold">Projects</a>
+                    <a href="contact.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-light via-white to-blue-50">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            Projects
+                        </span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8 animate-slide-up">
+                        Innovative AI solutions and tools that push the boundaries of what's possible
+                    </p>
+                    
+                    <!-- Filter Buttons -->
+                    <div class="flex flex-wrap justify-center gap-4 animate-slide-up" style="animation-delay: 0.2s;">
+                        <button class="filter-btn active bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-colors duration-300">
+                            All Projects
+                        </button>
+                        <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                            Machine Learning
+                        </button>
+                        <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                            Web Apps
+                        </button>
+                        <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                            Data Science
+                        </button>
+                        <button class="filter-btn bg-gray-100 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-200 transition-colors duration-300">
+                            Research
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Project -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold mb-4">Featured Project</h2>
+                        <p class="text-xl text-gray-600">My latest and most impactful work</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="lg:flex">
+                            <div class="lg:w-1/2 p-12">
+                                <div class="flex items-center mb-6">
+                                    <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mr-4">
+                                        <i class='bx bx-brain text-white text-2xl'></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-3xl font-bold">AI Ethics Analyzer</h3>
+                                        <p class="text-gray-600">Advanced bias detection system</p>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-lg text-gray-600 mb-6">
+                                    A comprehensive tool that analyzes AI models for potential biases and ethical concerns. 
+                                    It provides detailed reports on fairness metrics, suggests improvements, and helps ensure 
+                                    responsible AI deployment across various domains.
+                                </p>
+                                
+                                <div class="space-y-4 mb-8">
+                                    <div class="flex items-center">
+                                        <i class='bx bx-check-circle text-primary mr-3'></i>
+                                        <span>Real-time bias detection across multiple protected attributes</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class='bx bx-check-circle text-primary mr-3'></i>
+                                        <span>Interactive dashboard with detailed fairness metrics</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class='bx bx-check-circle text-primary mr-3'></i>
+                                        <span>Automated recommendations for bias mitigation</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class='bx bx-check-circle text-primary mr-3'></i>
+                                        <span>Integration with popular ML frameworks</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex flex-wrap gap-3 mb-8">
+                                    <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Python</span>
+                                    <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm">TensorFlow</span>
+                                    <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm">React</span>
+                                    <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">FastAPI</span>
+                                    <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm">Docker</span>
+                                </div>
+                                
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <a href="#" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 text-center">
+                                        <i class='bx bx-link-external mr-2'></i>
+                                        Live Demo
+                                    </a>
+                                    <a href="#" class="border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-all duration-300 text-center">
+                                        <i class='bx bxl-github mr-2'></i>
+                                        View Code
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="lg:w-1/2 bg-gradient-to-br from-primary to-secondary flex items-center justify-center p-12">
+                                <div class="text-center text-white">
+                                    <i class='bx bx-shield-alt-2 text-8xl mb-6 animate-float'></i>
+                                    <h4 class="text-2xl font-bold mb-4">Ethical AI</h4>
+                                    <p class="text-lg opacity-90">Building responsible and fair AI systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-7xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl font-bold mb-4">All Projects</h2>
+                        <p class="text-xl text-gray-600">A collection of my work in AI and technology</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project 1 -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                            <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center relative overflow-hidden">
+                                <i class='bx bx-bot text-white text-5xl group-hover:scale-110 transition-transform duration-300'></i>
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Smart Chat Assistant</h3>
+                                <p class="text-gray-600 mb-4">
+                                    An intelligent conversational AI with context awareness, emotion detection, and personalized responses.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-xs">NLP</span>
+                                    <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-xs">PyTorch</span>
+                                    <span class="bg-accent/10 text-accent px-2 py-1 rounded text-xs">FastAPI</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bxl-github'></i>
+                                        </a>
+                                    </div>
+                                    <span class="text-sm text-gray-500">Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                            <div class="h-48 bg-gradient-to-br from-secondary to-accent flex items-center justify-center relative overflow-hidden">
+                                <i class='bx bx-line-chart text-white text-5xl group-hover:scale-110 transition-transform duration-300'></i>
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Data Visualization Studio</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Interactive dashboard builder with AI-powered insights and automated pattern recognition.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-xs">React</span>
+                                    <span class="bg-accent/10 text-accent px-2 py-1 rounded text-xs">D3.js</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-xs">Python</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bxl-github'></i>
+                                        </a>
+                                    </div>
+                                    <span class="text-sm text-gray-500">Web Apps</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                            <div class="h-48 bg-gradient-to-br from-accent to-primary flex items-center justify-center relative overflow-hidden">
+                                <i class='bx bx-image-alt text-white text-5xl group-hover:scale-110 transition-transform duration-300'></i>
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Image Style Transfer</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Neural style transfer application that applies artistic styles to photographs in real-time.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-accent/10 text-accent px-2 py-1 rounded text-xs">TensorFlow</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-xs">Computer Vision</span>
+                                    <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-xs">Flask</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bxl-github'></i>
+                                        </a>
+                                    </div>
+                                    <span class="text-sm text-gray-500">Machine Learning</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                            <div class="h-48 bg-gradient-to-br from-primary to-secondary flex items-center justify-center relative overflow-hidden">
+                                <i class='bx bx-trending-up text-white text-5xl group-hover:scale-110 transition-transform duration-300'></i>
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Market Sentiment Analyzer</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Real-time sentiment analysis of social media and news to predict market trends and movements.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-xs">NLP</span>
+                                    <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-xs">Sentiment Analysis</span>
+                                    <span class="bg-accent/10 text-accent px-2 py-1 rounded text-xs">APIs</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bxl-github'></i>
+                                        </a>
+                                    </div>
+                                    <span class="text-sm text-gray-500">Data Science</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                            <div class="h-48 bg-gradient-to-br from-secondary to-accent flex items-center justify-center relative overflow-hidden">
+                                <i class='bx bx-health text-white text-5xl group-hover:scale-110 transition-transform duration-300'></i>
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Medical Image Classifier</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Deep learning model for medical image analysis with high accuracy in detecting anomalies.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-xs">CNN</span>
+                                    <span class="bg-accent/10 text-accent px-2 py-1 rounded text-xs">Medical AI</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-xs">PyTorch</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bxl-github'></i>
+                                        </a>
+                                    </div>
+                                    <span class="text-sm text-gray-500">Research</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                            <div class="h-48 bg-gradient-to-br from-accent to-primary flex items-center justify-center relative overflow-hidden">
+                                <i class='bx bx-code-alt text-white text-5xl group-hover:scale-110 transition-transform duration-300'></i>
+                                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-3">Code Generation Assistant</h3>
+                                <p class="text-gray-600 mb-4">
+                                    AI-powered tool that generates clean, efficient code from natural language descriptions.
+                                </p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-accent/10 text-accent px-2 py-1 rounded text-xs">GPT</span>
+                                    <span class="bg-primary/10 text-primary px-2 py-1 rounded text-xs">Code Gen</span>
+                                    <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-xs">VS Code</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bx-link-external'></i>
+                                        </a>
+                                        <a href="#" class="text-primary hover:text-secondary transition-colors duration-300">
+                                            <i class='bx bxl-github'></i>
+                                        </a>
+                                    </div>
+                                    <span class="text-sm text-gray-500">Web Apps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-8">Technologies I Use</h2>
+                    <p class="text-xl text-gray-600 mb-12">
+                        The tools and frameworks that power my projects
+                    </p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300">
+                            <i class='bx bxl-python text-4xl text-primary mb-2'></i>
+                            <span class="text-sm font-medium">Python</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300">
+                            <i class='bx bxl-javascript text-4xl text-secondary mb-2'></i>
+                            <span class="text-sm font-medium">JavaScript</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300">
+                            <i class='bx bxl-react text-4xl text-accent mb-2'></i>
+                            <span class="text-sm font-medium">React</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300">
+                            <i class='bx bx-brain text-4xl text-primary mb-2'></i>
+                            <span class="text-sm font-medium">TensorFlow</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300">
+                            <i class='bx bx-data text-4xl text-secondary mb-2'></i>
+                            <span class="text-sm font-medium">PyTorch</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors duration-300">
+                            <i class='bx bxl-docker text-4xl text-accent mb-2'></i>
+                            <span class="text-sm font-medium">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Interested in Collaboration?</h2>
+                    <p class="text-xl text-white/90 mb-8">
+                        I'm always open to discussing new projects, innovative ideas, or opportunities to collaborate
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                            <i class='bx bx-message-dots mr-2'></i>
+                            Get In Touch
+                        </a>
+                        <a href="blog.html" class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition-all duration-300">
+                            <i class='bx bx-book-reader mr-2'></i>
+                            Read My Blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <i class='bx bx-brain text-white text-xl'></i>
+                        </div>
+                        <span class="text-xl font-bold">Emily AI Insight</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Exploring the intersection of AI, technology, and human creativity through insightful content and innovative projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bxl-twitter text-xl'></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bxl-linkedin text-xl'></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bxl-github text-xl'></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bx-envelope text-xl'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors duration-300">About</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Blog</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Categories -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">AI Research</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Machine Learning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Data Science</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Technology</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Tutorials</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 Emily AI Insight. All rights reserved. Built with ❤️ and AI.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

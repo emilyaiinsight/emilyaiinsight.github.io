@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Emily AI Insight</title>
+    <meta name="description" content="Learn more about Emily, her journey in AI, and her passion for technology">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#06b6d4',
+                        dark: '#1e293b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- Floating Header Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <i class='bx bx-brain text-white text-xl'></i>
+                    </div>
+                    <a href="index.html" class="text-xl font-bold text-dark">Emily AI Insight</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-primary font-semibold">About</a>
+                    <a href="blog.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Blog</a>
+                    <a href="projects.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="contact.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-dark hover:text-primary transition-colors duration-300">
+                    <i class='bx bx-menu text-2xl'></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden mt-4 pb-4 hidden">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-primary font-semibold">About</a>
+                    <a href="blog.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Blog</a>
+                    <a href="projects.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Projects</a>
+                    <a href="contact.html" class="nav-link text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-br from-light via-white to-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-fade-in">
+                        <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                            About Me
+                        </span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8 animate-slide-up">
+                        Passionate about AI, driven by curiosity, inspired by possibilities
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Story Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="order-2 lg:order-1">
+                            <h2 class="text-4xl font-bold mb-6">My Journey</h2>
+                            <div class="space-y-6 text-lg text-gray-600">
+                                <p>
+                                    Hello! I'm Emily, and welcome to my corner of the internet where artificial intelligence meets human curiosity. 
+                                    My journey into the world of AI began during my computer science studies, where I was fascinated by the potential 
+                                    of machines to learn, adapt, and solve complex problems.
+                                </p>
+                                <p>
+                                    What started as academic interest quickly evolved into a deep passion for understanding how AI can enhance human 
+                                    creativity and solve real-world challenges. I believe that the most exciting developments happen at the intersection 
+                                    of technology and human insight.
+                                </p>
+                                <p>
+                                    Through this blog, I share my discoveries, insights, and thoughts on the rapidly evolving landscape of artificial 
+                                    intelligence. Whether you're a fellow AI enthusiast, a curious beginner, or someone interested in the broader 
+                                    implications of technology, I hope you'll find something valuable here.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2 flex justify-center">
+                            <div class="relative">
+                                <div class="w-80 h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center animate-float">
+                                    <i class='bx bx-user text-8xl text-primary'></i>
+                                </div>
+                                <!-- Floating elements -->
+                                <div class="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center animate-pulse-slow">
+                                    <i class='bx bx-brain text-white text-xl'></i>
+                                </div>
+                                <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center animate-pulse-slow" style="animation-delay: 1s;">
+                                    <i class='bx bx-code-alt text-white'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Expertise Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-bold mb-4">Skills & Expertise</h2>
+                        <p class="text-xl text-gray-600">Areas where I focus my research and development efforts</p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Skill 1 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-6">
+                                <i class='bx bx-brain text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Machine Learning</h3>
+                            <p class="text-gray-600 mb-4">
+                                Deep understanding of ML algorithms, neural networks, and their practical applications in solving real-world problems.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">TensorFlow</span>
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">PyTorch</span>
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Scikit-learn</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 2 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center mb-6">
+                                <i class='bx bx-data text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Data Science</h3>
+                            <p class="text-gray-600 mb-4">
+                                Expertise in data analysis, visualization, and extracting meaningful insights from complex datasets.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Python</span>
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">R</span>
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">SQL</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center mb-6">
+                                <i class='bx bx-code-alt text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Software Development</h3>
+                            <p class="text-gray-600 mb-4">
+                                Full-stack development skills with focus on building AI-powered applications and tools.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">JavaScript</span>
+                                <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">React</span>
+                                <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">Node.js</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 4 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-6">
+                                <i class='bx bx-line-chart text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Data Visualization</h3>
+                            <p class="text-gray-600 mb-4">
+                                Creating compelling visual narratives that make complex AI concepts accessible and understandable.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">D3.js</span>
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Plotly</span>
+                                <span class="bg-primary/10 text-primary px-2 py-1 rounded text-sm">Tableau</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 5 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center mb-6">
+                                <i class='bx bx-edit-alt text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Technical Writing</h3>
+                            <p class="text-gray-600 mb-4">
+                                Translating complex technical concepts into clear, engaging content for diverse audiences.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Documentation</span>
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Tutorials</span>
+                                <span class="bg-secondary/10 text-secondary px-2 py-1 rounded text-sm">Research</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill 6 -->
+                        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div class="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-lg flex items-center justify-center mb-6">
+                                <i class='bx bx-shield-alt-2 text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">AI Ethics</h3>
+                            <p class="text-gray-600 mb-4">
+                                Committed to responsible AI development and understanding the societal implications of technology.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">Bias Detection</span>
+                                <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">Fairness</span>
+                                <span class="bg-accent/10 text-accent px-2 py-1 rounded text-sm">Transparency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values & Philosophy Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-8">My Philosophy</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class='bx bx-bulb text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Curiosity-Driven</h3>
+                            <p class="text-gray-600">
+                                I believe the best discoveries come from asking "what if?" and being willing to explore uncharted territories.
+                            </p>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class='bx bx-group text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Human-Centered</h3>
+                            <p class="text-gray-600">
+                                Technology should enhance human capabilities and solve real problems that matter to people's lives.
+                            </p>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class='bx bx-share-alt text-white text-2xl'></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3">Knowledge Sharing</h3>
+                            <p class="text-gray-600">
+                                The best way to advance the field is through open collaboration and sharing insights with the community.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl font-bold text-center mb-16">My Journey</h2>
+                    
+                    <div class="relative">
+                        <!-- Timeline line -->
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary to-secondary"></div>
+                        
+                        <!-- Timeline items -->
+                        <div class="space-y-12">
+                            <!-- Item 1 -->
+                            <div class="flex items-center">
+                                <div class="w-1/2 pr-8 text-right">
+                                    <h3 class="text-xl font-bold mb-2">Started AI Journey</h3>
+                                    <p class="text-gray-600">Began exploring machine learning during computer science studies</p>
+                                    <span class="text-sm text-primary font-medium">2020</span>
+                                </div>
+                                <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center relative z-10">
+                                    <i class='bx bx-play text-white'></i>
+                                </div>
+                                <div class="w-1/2 pl-8"></div>
+                            </div>
+                            
+                            <!-- Item 2 -->
+                            <div class="flex items-center">
+                                <div class="w-1/2 pr-8"></div>
+                                <div class="w-8 h-8 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center relative z-10">
+                                    <i class='bx bx-code-alt text-white'></i>
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <h3 class="text-xl font-bold mb-2">First AI Project</h3>
+                                    <p class="text-gray-600">Built my first neural network for image classification</p>
+                                    <span class="text-sm text-secondary font-medium">2021</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 3 -->
+                            <div class="flex items-center">
+                                <div class="w-1/2 pr-8 text-right">
+                                    <h3 class="text-xl font-bold mb-2">Research Focus</h3>
+                                    <p class="text-gray-600">Specialized in natural language processing and AI ethics</p>
+                                    <span class="text-sm text-accent font-medium">2022</span>
+                                </div>
+                                <div class="w-8 h-8 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center relative z-10">
+                                    <i class='bx bx-search text-white'></i>
+                                </div>
+                                <div class="w-1/2 pl-8"></div>
+                            </div>
+                            
+                            <!-- Item 4 -->
+                            <div class="flex items-center">
+                                <div class="w-1/2 pr-8"></div>
+                                <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center relative z-10">
+                                    <i class='bx bx-edit-alt text-white'></i>
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <h3 class="text-xl font-bold mb-2">Started Writing</h3>
+                                    <p class="text-gray-600">Began sharing insights through technical articles and tutorials</p>
+                                    <span class="text-sm text-primary font-medium">2023</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Item 5 -->
+                            <div class="flex items-center">
+                                <div class="w-1/2 pr-8 text-right">
+                                    <h3 class="text-xl font-bold mb-2">Launched Blog</h3>
+                                    <p class="text-gray-600">Created this platform to share AI insights with the community</p>
+                                    <span class="text-sm text-secondary font-medium">2024</span>
+                                </div>
+                                <div class="w-8 h-8 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center relative z-10">
+                                    <i class='bx bx-rocket text-white'></i>
+                                </div>
+                                <div class="w-1/2 pl-8"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+            <div class="container mx-auto px-6 text-center">
+                <div class="max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Connect</h2>
+                    <p class="text-xl text-white/90 mb-8">
+                        I'm always excited to discuss AI, collaborate on projects, or simply chat about technology
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact.html" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300">
+                            <i class='bx bx-message-dots mr-2'></i>
+                            Get In Touch
+                        </a>
+                        <a href="blog.html" class="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition-all duration-300">
+                            <i class='bx bx-book-reader mr-2'></i>
+                            Read My Blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <i class='bx bx-brain text-white text-xl'></i>
+                        </div>
+                        <span class="text-xl font-bold">Emily AI Insight</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Exploring the intersection of AI, technology, and human creativity through insightful content and innovative projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bxl-twitter text-xl'></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bxl-linkedin text-xl'></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bxl-github text-xl'></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                            <i class='bx bx-envelope text-xl'></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition-colors duration-300">About</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Blog</a></li>
+                        <li><a href="projects.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Projects</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Categories -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Categories</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">AI Research</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Machine Learning</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Data Science</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Technology</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors duration-300">Tutorials</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 Emily AI Insight. All rights reserved. Built with ❤️ and AI.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
